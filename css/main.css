@@ -25,7 +25,7 @@ html, body {
   line-height:1;
   color:#333;
   background: #f2f7fb;
-  font-size: 12px
+  font-size: 62.5%
 }
 ol, ul { list-style: none;}
 input, button { outline:none;border: none }
@@ -78,8 +78,8 @@ header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inl
 .main_pro_list .percent{ width: 50%; float: left; }
 .main_pro_list .repayment{ width: 50%; float: right; }
 .main_pro_list .bottom b,.main_pro_list .bottom span{ display: block; color: #999; font-size: 14px; padding-bottom: 10px;}
-.main_pro_list .bottom .percent b{ font-size: 18px; color: #4585fe; }
-.main_pro_list .bottom .repayment b{ font-size: 15px; color: #333; }
+.main_pro_list .bottom .percent b{ font-size: 0.45rem; color: #4585fe; }
+.main_pro_list .bottom .repayment b{ font-size: 0.375rem; color: #333; }
 
 
 
