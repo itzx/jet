@@ -1,0 +1,65 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, em, img, small, strong, var, b, i, center, dl, dt, dd, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td, article, footer, header, menu, nav, output, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  outline:none;border:none;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+html, body {
+  width:100%;
+  max-width:750px;
+  background:#fff;
+  margin:0 auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height:1;
+  color:#333;
+  background: #f2f7fb;
+  font-size: 12px
+}
+ol, ul { list-style: none;}
+input, button { outline:none;border: none }
+button:focus { border: none; }
+img { width: 100%; vertical-align: middle; outline: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;}
+
+/*清浮动*/
+.clearfix:after { content: " "; display: block; clear: both; height: 0;}
+.clearfix {zoom: 1;}
+/*popup*/
+.popup{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.5);}
+.popup .cont{height: 110px;position: absolute;top: 50%;margin-top: -75px;left: 8%;right: 8%;border-radius: 5px;text-align: center;background: #fff; border-bottom: 42px solid #ef3b41;}
+.popup .cont img{width: 30px;height: 21px;margin-top: 40px;}
+.popup .cont p{color: #ef3b41;margin-top: 10px;}
+.popup .cont .cont-colse img{position: absolute;top: 50%;width: 30px;height: 30px;margin-top: 110px;left: 50%;margin-left: -15px;}
+header.blue{background: #3494f9;}
+header.blue a img{width: 8px;height: 15px;}
+header.blue h3{color: #fff;}
+/*login*/
+header{position: relative;height: 45px;}
+header .title-icon{width: 15%;display: block;    height: 100%;}
+header .title-icon img{width:15px;height:15px;display: block;margin: 0 auto;padding-top: 15px;}
+header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inline-block;overflow: hidden;width: auto;    margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 14px}
+.title-logo{text-align: center;margin: 30px 0 70px;}
+.title-logo img{width: 40px;height: 38px;}
+.form-login{}
+.form-login .item{height: 50px;line-height: 50px;position: relative;background: #fff;}
+.form-login .item:after{position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;content: '';}
+.form-login .item label{width: 35%;padding: 0 15px;font-size: 14px;color: #555;}
+.form-login .item input{width: 65%;color: #c1c1c1;font-size: 14px}
+.form-login .item .get-code{position: absolute;right: 15px;height: 26px;width: 90px;line-height: 27px;padding: 0;background: #3977fe;color: #fff;font-size: 12px;margin-top: 12px;border-radius: 5px;border: none;cursor: pointer;}
+.form-login .padded{margin-top: 45px;}
+.form-login .padded .login-page{margin: 0 6%;background: #3377ff;border-radius: 5px;color: #fff;text-align: center;height: 50px;display: block;line-height: 50px;font-size: 14px}
+.form-login .link-area{float: right;margin-right: 6%;height: 40px;line-height: 40px;}
+.form-login .link-area a{color: #555;}
