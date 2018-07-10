@@ -63,3 +63,33 @@ header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inl
 .form-login .padded .login-page{margin: 0 6%;background: #3377ff;border-radius: 5px;color: #fff;text-align: center;height: 50px;display: block;line-height: 50px;font-size: 14px}
 .form-login .link-area{float: right;margin-right: 6%;height: 40px;line-height: 40px;}
 .form-login .link-area a{color: #555;}
+/*蓝底头*/
+.main_header{ background: #3491f9; position: fixed; left: 0; top:0; height: 45px; width: 100%;}
+.title_index{position: absolute;right: 40px;left: 40px;top:0;display: inline-block;overflow: hidden;width: auto; margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 16px; color: #FFF;}
+/*主产品列表样式*/
+.main_pro_list{ padding:60px 20px; }
+.main_pro_list li{ background: #fff; margin-bottom: 20px; padding-bottom: 10px; border-radius: 5px; box-shadow: 0 0 10px #b8d1ff}
+.main_pro_list a{ display: block; padding:0 20px;}
+.main_pro_list .title{ height: 46px; line-height: 46px; font-size: 14px; color: #333; text-align: left; border-bottom: 1px solid #ebebeb;}
+.main_pro_list .tabs{ font-size: 12px; border: 1px solid #ccc; color: #999; border-radius: 3px; padding: 1px 2px; margin-left: 4px;}
+.main_pro_list .tabs_blue{ border-color: #4585fe; color: #4585fe}
+.main_pro_list .tabs_orange{ border-color: #f76a3e; color: #f76a3e}
+.main_pro_list .bottom{ overflow-x: hidden; padding-top: 20px;}
+.main_pro_list .percent{ width: 50%; float: left; }
+.main_pro_list .repayment{ width: 50%; float: right; }
+.main_pro_list .bottom b,.main_pro_list .bottom span{ display: block; color: #999; font-size: 14px; padding-bottom: 10px;}
+.main_pro_list .bottom .percent b{ font-size: 18px; color: #4585fe; }
+.main_pro_list .bottom .repayment b{ font-size: 15px; color: #333; }
+
+
+
+
+
+
+
+
+
+
+
+
+
