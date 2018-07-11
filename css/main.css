@@ -25,7 +25,7 @@ html, body {
   line-height:1;
   color:#333;
   background: #f2f7fb;
-  font-size: 62.5%
+  font-size: 12px
 }
 ol, ul { list-style: none;}
 input, button { outline:none;border: none }
@@ -37,32 +37,6 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 /*清浮动*/
 .clearfix:after { content: " "; display: block; clear: both; height: 0;}
 .clearfix {zoom: 1;}
-/*popup*/
-.popup{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.5);}
-.popup .cont{height: 110px;position: absolute;top: 50%;margin-top: -75px;left: 8%;right: 8%;border-radius: 5px;text-align: center;background: #fff; border-bottom: 42px solid #ef3b41;}
-.popup .cont img{width: 30px;height: 21px;margin-top: 40px;}
-.popup .cont p{color: #ef3b41;margin-top: 10px;}
-.popup .cont .cont-colse img{position: absolute;top: 50%;width: 30px;height: 30px;margin-top: 110px;left: 50%;margin-left: -15px;}
-header.blue{background: #3494f9;}
-header.blue a img{width: 8px;height: 15px;}
-header.blue h3{color: #fff;}
-/*login*/
-header{position: relative;height: 45px;}
-header .title-icon{width: 15%;display: block;    height: 100%;}
-header .title-icon img{width:15px;height:15px;display: block;margin: 0 auto;padding-top: 15px;}
-header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inline-block;overflow: hidden;width: auto;    margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 14px}
-.title-logo{text-align: center;margin: 75px 0 70px;}
-.title-logo img{width: 40px;height: 38px;}
-.form-login{}
-.form-login .item{height: 50px;line-height: 50px;position: relative;background: #fff;}
-.form-login .item:after{position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;content: '';}
-.form-login .item label{width: 35%;padding: 0 15px;font-size: 14px;color: #555;}
-.form-login .item input{width: 65%;color: #c1c1c1;font-size: 14px}
-.form-login .item .get-code{position: absolute;right: 15px;height: 26px;width: 90px;line-height: 27px;padding: 0;background: #3977fe;color: #fff;font-size: 12px;margin-top: 12px;border-radius: 5px;border: none;cursor: pointer;}
-.form-login .padded{margin-top: 45px;}
-.form-login .padded .login-page{margin: 0 6%;background: #3377ff;border-radius: 5px;color: #fff;text-align: center;height: 50px;display: block;line-height: 50px;font-size: 14px}
-.form-login .link-area{float: right;margin-right: 6%;height: 40px;line-height: 40px;}
-.form-login .link-area a{color: #555;}
 /*蓝底头*/
 .main_header{ background: #3491f9; position: fixed; left: 0; top:0; height: 45px; width: 100%;}
 .main_header.white{ background: #fff; }
@@ -101,16 +75,67 @@ header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inl
 .main_pro_list .bottom b,.main_pro_list .bottom span{ display: block; color: #999; font-size: 14px; padding-bottom: 10px;}
 .main_pro_list .bottom .percent b{ font-size: 0.45rem; color: #4585fe; }
 .main_pro_list .bottom .repayment b{ font-size: 0.375rem; color: #333; }
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*popup*/
+.popup{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.5);}
+.popup .cont{height: 110px;position: absolute;top: 50%;margin-top: -75px;left: 8%;right: 8%;border-radius: 5px;text-align: center;background: #fff; border-bottom: 42px solid #ef3b41;}
+.popup .cont img{width: 30px;height: 21px;margin-top: 40px;}
+.popup .cont p{color: #ef3b41;margin-top: 10px;}
+.popup .cont .cont-colse img{position: absolute;top: 50%;width: 30px;height: 30px;margin-top: 110px;left: 50%;margin-left: -15px;}
+.title-logo{text-align: center;    margin: 75px 0 70px;}
+.title-logo img{width: 40px;height: 38px;}
+.form-login{}
+.form-login .item{height: 50px;line-height: 50px;position: relative;background: #fff;clear: both;}
+.form-login .item:after{position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;content: '';}
+.form-login .item a{display: block;}
+.form-login .item a:before{content: '';position: absolute;right: 8%;width: 9px;height: 9px;top: 20px;border-top: 1px solid #ababab;    border-right: 1px solid #ababab;transform: rotate(45deg);}
+.form-login .item label{width: 35%;padding: 0 15px;font-size: 14px;color: #555;}
+.form-login .item input{width: 65%;color: #c1c1c1;font-size: 14px;}
+.buy-form.form-login .item label{padding: 0 0 0 15px;float: left;box-sizing: border-box;}
+.buy-form.form-login .item input{float: right;height: 24px;margin-top: 14px;}
+.buy-form.form-login .item .bank{}
+.buy-form.form-login .item .bank img{width: 21px;height: 21px;float: left;margin-top: 15px;}
+.buy-form.form-login .item .bank p {line-height: 18px;margin-left: 10px;}
+.buy-form.form-login .item .bank .p1 {margin-top: 7px;}
+.buy-form.form-login .item .bank p .bk1{font-size: 13px;color: #999999;}
+.buy-form.form-login .item .bank p .bk2{font-size: 11px;color: #3977fe;}
+.buy-form.form-login .item .bank .p2{font-size: 10px;color: #999}
+.buy-form.form-login .item .bank .bank-info{float: left;}
+.form-login .item .get-code{position: absolute;right: 15px;height: 26px;width: 90px;line-height: 27px;padding: 0;background: #3977fe;color: #fff;font-size: 12px;margin-top: 12px;border-radius: 5px;border: none;cursor: pointer;}
+.form-login .padded{margin-top: 45px;}
+.form-login .padded .agree{margin: -25px 6% 40px;height: 30px;font-size: 12px}
+.form-login .padded .agree label{float: left;display: block;width: 20%;}
+.form-login .padded .agree .xieyi{float: right;width: 80%;line-height: 19px;}
+.form-login .padded .agree .xieyi a{color: #3977fe;}
+.form-login .padded .login-page{margin: 0 6%;background: #3377ff;border-radius: 5px;color: #fff;text-align: center;height: 50px;display: block;line-height: 50px;font-size: 14px;clear: both;}
+.form-login .link-area{float: right;margin-right: 6%;height: 40px;line-height: 40px;}
+.form-login .link-area a{color: #555;}
+/*search*/
+.search-user{position: relative;margin-top: 45px;}
+.search-user input{margin: 10px 5%;height: 20px;background: #fff;border-radius: 50px;text-align: center;width: 90%;padding: 8px 0;position: relative;}
+.search-user a{position: absolute;right: 10%;top: 19px;width: 18px;height: 19px;}
+.client-list{background: #fff;}
+.client-list li{clear: both;overflow: hidden;height: 55px;position: relative;}
+.client-list li:after{content: '';position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;}
+.client-list li .list-l{float: left;    margin-top: 18px;padding-left: 15px;}
+.client-list li .list-l img{width: 20px;height: 20px;margin: 0 15px 0 9px;}
+.client-list li .list-l span{color: #555;font-size: 13px;}
+.client-list li .list-r{float: right;text-align: right;line-height: 18px;margin-top: 10px;margin-right: 6%;}
+.client-list li .list-r h4{font-size: 15px}
+.client-list li .list-r p{color: #999;font-size: 12px}
+.fixboc{position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: rgba(0,0,0,0.5);z-index: 0;display: none;}
+.fix.search-user{position: fixed;top: 45px;z-index: 9;width: 100%;max-width: 750px;}
+/*sselect bank*/
+.buy-form.form-login .item input[type=radio]{position: absolute;right: 8%;width: 12px;height: 12px;}
+/*entrust*/
+.entrust{margin: 0 6%;}
+.entrust h3{text-align: center;font-size: 14px;margin: 30px 0 20px;}
+.entrust p{margin-top: 18px;line-height: 18px;color: #555;text-align: justify;}
+.entrust p.entrust-j{margin-top: 35px;}
+/*pay-error*/
+.pay-type{height: 175px;text-align: center;}
+.pay-type img{width: 48px;height: 48px;margin-bottom: 15px;margin-top: 48px;}
+.pay-type p{color: #999;}
+.pay-type p.blue{color: #3977fe;}
+/*admin*/
+.user-k{}
+.user-k img{width: 60px;height: 70px;position: fixed;top: 50%;left: 50%;margin-left: -30px;margin-top: -35px;}
