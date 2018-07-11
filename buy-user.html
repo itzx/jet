@@ -10,7 +10,7 @@
 
 	<body>
 		<header class="main_header">
-			<a href="javascript:void(0);" class="l back"></a>
+			<a href="javascript:history.back(-1)" class="l back"></a>
 			<h3 class="title">我的客户</h3>
 		</header>
 
@@ -85,10 +85,15 @@
 		<div class="fixboc"></div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(".search-u").on("focus", function() {
-				alert(1)
+			$("#search-u").on("focus", function() {
+				$(".client-list").addClass("fix")
 				$(".fixboc").show();
 				$(this).parent().addClass("fix")
+			})
+			$("#search-u").on("blur",function(){
+				$(".client-list").removeClass("fix")
+				$(".fixboc").hide();
+				$(this).parent().removeClass("fix")
 			})
 		</script>
 	</body>

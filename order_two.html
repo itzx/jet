@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>客户订单查询</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<header class="main_header">
+			<a href="javascript:history.back(-1)" class="l back"></a>
+			<h3 class="title">客户订单查询</h3>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="javascript:;">交易记录</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;" class="active">投资记录</a></li>
+			</ul>
+		</nav>
+		<div class="screen">
+			<a href="javascript:;" class="s-scr">筛选</a>
+			<ul class="scr-type">
+				<li>投资状态</li>
+				<li>不限</li>
+				<li>投资中</li>
+				<li>已兑现</li>
+			</ul>
+		</div>
+		<section class="client-list">
+			<ul>
+				<li>
+					<div class="list-l order-l">
+						<h4>产品名称  &nbsp;|&nbsp;  <span>7%</span></h4>
+						<p>2018-01-16 11:35:29</p>
+					</div>
+					<div class="list-r">
+						<h4>2000.00元</h4>
+						<p class="blue">投资中</p>
+					</div>
+				</li>
+				<li>
+					<div class="list-l order-l">
+						<h4>产品名称  &nbsp;|&nbsp;  <span>7%</span></h4>
+						<p>2018-01-16 11:35:29</p>
+					</div>
+					<div class="list-r">
+						<h4>2000.00元</h4>
+						<p class="blue">投资中</p>
+					</div>
+				</li>
+				<li>
+					<div class="list-l order-l">
+						<h4>产品名称  &nbsp;|&nbsp;  <span>7%</span></h4>
+						<p>2018-01-16 11:35:29</p>
+					</div>
+					<div class="list-r">
+						<h4>2000.00元</h4>
+						<p class="blue">投资中</p>
+					</div>
+				</li>
+				<li>
+					<div class="list-l order-l">
+						<h4>产品名称  &nbsp;|&nbsp;  <span>7%</span></h4>
+						<p>2018-01-16 11:35:29</p>
+					</div>
+					<div class="list-r">
+						<h4>2000.00元</h4>
+						<p class="red">已兑现</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<div class="fixboc"></div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".s-scr").on("click",function(){
+				$(".fixboc,.scr-type").show();			
+			})
+			$(".scr-type li").on("click",function(){
+				$(".fixboc,.scr-type").hide()
+			})
+		</script>
+	</body>
+
+</html>

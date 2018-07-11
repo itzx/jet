@@ -25,8 +25,9 @@ html, body {
   line-height:1;
   color:#333;
   background: #f2f7fb;
-  font-size: 12px
+  font-size: 12px;
 }
+body{margin-top: 45px;}
 ol, ul { list-style: none;}
 input, button { outline:none;border: none }
 button:focus { border: none; }
@@ -38,7 +39,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .clearfix:after { content: " "; display: block; clear: both; height: 0;}
 .clearfix {zoom: 1;}
 /*蓝底头*/
-.main_header{ background: #3491f9; position: fixed; left: 0; top:0; height: 45px; width: 100%;}
+.main_header{ background: #3491f9; position: fixed; left: 0; top:0; height: 45px; width: 100%;z-index: 99;}
 .main_header.white{ background: #fff; }
 .main_header .title{position: absolute;right: 45px;left: 45px;top:0;display: inline-block;overflow: hidden;width: auto; margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 16px; color: #FFF;}
 .main_header.white .title{ color: #3491f9; }
@@ -111,6 +112,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .form-login{    margin-top: 45px;}
 .form-login .item{height: 50px;line-height: 50px;position: relative;background: #fff;clear: both;}
 .form-login .item:after{position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;content: '';}
+.form-login .item.it-none:after{border: none;}
 .form-login .item a{display: block;}
 .form-login .item a:before{content: '';position: absolute;right: 8%;width: 9px;height: 9px;top: 20px;border-top: 1px solid #ababab;    border-right: 1px solid #ababab;transform: rotate(45deg);}
 .form-login .item label{width: 34%;padding: 0 15px;font-size: 14px;color: #555;}
@@ -135,7 +137,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .form-login .link-area{float: right;margin-right: 6%;height: 40px;line-height: 40px;}
 .form-login .link-area a{color: #555;}
 /*search*/
-.search-user{position: relative;margin-top: 45px;}
+.search-user{position: relative;}
 .search-user input{margin: 10px 5%;height: 20px;background: #fff;border-radius: 50px;text-align: center;width: 90%;padding: 8px 0;position: relative;}
 .search-user a{position: absolute;right: 10%;top: 19px;width: 18px;height: 19px;}
 .client-list{background: #fff;}
@@ -151,6 +153,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .fix.search-user{position: fixed;top: 45px;z-index: 9;width: 100%;max-width: 750px;}
 /*sselect bank*/
 .buy-form.form-login .item input[type=radio]{position: absolute;right: 8%;width: 12px;height: 12px;}
+.client-list.fix{padding-top: 56px;}
 /*entrust*/
 .entrust{margin: 0 6%;}
 .entrust h3{text-align: center;font-size: 14px;margin: 30px 0 20px;}
@@ -164,3 +167,25 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 /*admin*/
 .user-k{}
 .user-k img{width: 60px;height: 70px;position: fixed;top: 50%;left: 50%;margin-left: -30px;margin-top: -35px;}
+.introduce{height: 40px;line-height: 45px;padding-left: 15px;}
+.table{font-size: 13px;width: 100%;text-align: center;margin-bottom: 60px;}
+.table thead tr{height: 45px;line-height: 45px;}
+.table tbody tr{height: 40px;border-bottom: 1px solid #e6e6e6;font-size: 13px;line-height: 40px;background: #fff;}
+/*order*/
+nav{border-bottom: 1px solid #f1f2f1;overflow: hidden;background: #fff;}
+nav li{width: 49%;float: left;text-align: center;height: 45px;line-height: 45px; }
+nav li.line{width: 1%;color: #999;}
+nav li a{display: block;}
+nav li a.active{color: #3977fe;}
+.client-list li .list-l.order-l{line-height: 19px;margin-top: 10px;}
+.list-l.order-l h4{color: #555;font-size: 14px}
+.list-l.order-l h4 span{color: #3977FE}
+.list-l.order-l p{color: #999;}
+.client-list li .list-r p.blue{color: #3977FE;}
+.client-list li .list-r p.red{color: #fd6040;}
+.screen{position: relative;height: 35px;}
+.screen a{height: 35px;width:50px;text-align:center;display: block;float: right;margin-right: 25px;line-height: 35px;color: #999;}
+.scr-type{width: 120px;border-radius: 5px;background: #fff;position: absolute;right: 25px;z-index: 99;top: 35px;display: none;}
+.scr-type:after{content: '';width:0;
+height:0;border-width:0 7px 7px;border-style:solid;border-color:transparent transparent #fff;position:absolute;top:-7px;right: 20px;}
+.scr-type li{text-align: center;margin: 0 10px;border-bottom: 1px solid #e6e6e6;width: 100px;height: 38px;line-height: 38px;}
