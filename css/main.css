@@ -104,6 +104,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .my_num{ background: #3491f9; color: #FFF; padding-top: 110px; padding-bottom: 60px; text-align: center;}
 .my_num .num{ font-size: 30px; }
 .my_num .tips{ font-size: 12px; padding: 10px 0 0; }
+.my_index_list{padding-bottom: 60px;}
 .my_index_list li{ background: #FFF; border-top: 1px solid #ebebeb; height: 60px; margin-top: -1px;}
 .my_index_list li a{ display: block; height: 60px; padding: 0 20px; color: #555; font-size: 15px;}
 .my_index_list li .icon{ float: left; margin-top: 17px; width: 25px; height: 25px; background: url(../img/myicon.png) no-repeat; background-size: 125px 25px; }
@@ -142,7 +143,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .card_list_pops .con .btns a{ display: block; width: 50%; float: left;}
 .card_list_pops .con .btns .ok{ color: #3977fe }
 /*popup*/
-.popup{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.5);}
+.popup{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.5);display: none;}
 .popup .cont{height: 110px;position: absolute;top: 50%;margin-top: -75px;left: 8%;right: 8%;border-radius: 5px;text-align: center;background: #fff; border-bottom: 42px solid #ef3b41;}
 .popup .cont img{width: 30px;height: 21px;margin-top: 40px;}
 .popup .cont p{color: #ef3b41;margin-top: 10px;}
@@ -184,6 +185,8 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .client-list{background: #fff;}
 .client-list li{clear: both;overflow: hidden;height: 55px;position: relative;}
 .client-list li:after{content: '';position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;}
+.client-list li a{ display: block;
+    overflow: hidden;}
 .client-list li .list-l{float: left;    margin-top: 18px;padding-left: 15px;}
 .client-list li .list-l img{width: 20px;height: 20px;margin: 0 15px 0 9px;}
 .client-list li .list-l span{color: #555;font-size: 13px;}
@@ -193,7 +196,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .fixboc{position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: rgba(0,0,0,0.5);z-index: 0;display: none;}
 .fix.search-user{position: fixed;top: 45px;z-index: 9;width: 100%;max-width: 750px;}
 /*sselect bank*/
-.buy-form.form-login .item input[type=radio]{position: absolute;right: 8%;width: 12px;height: 12px;}
+.buy-form.form-login .item input[type=radio]{position: absolute;right: 8%;width: 12px;height: 12px;top: 6px;}
 .client-list.fix{padding-top: 56px;}
 /*entrust*/
 .entrust{margin: 0 6%;}

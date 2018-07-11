@@ -84,7 +84,7 @@
 			</ul>
 		</section>
 		<footer class="main_footer">
-        <a href="javascript:void(0)">
+        <a href="index.html">
             <span class="home"></span>
             <b>首页</b>
         </a>
@@ -92,7 +92,7 @@
             <span class="customer"></span>
             <b>客户管理</b>
         </a>
-        <a href="javascript:void(0)">
+        <a href="my_index.html">
             <span class="usercenter"></span>
             <b>我的</b>
         </a>
@@ -101,10 +101,15 @@
 		<div class="fixboc"></div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(".search-u").on("focus", function() {
-				alert(1)
+			$("#search-u").on("focus", function() {
+				$(".client-list").addClass("fix")
 				$(".fixboc").show();
 				$(this).parent().addClass("fix")
+			})
+			$("#search-u").on("blur", function() {
+				$(".client-list").removeClass("fix")
+				$(".fixboc").hide();
+				$(this).parent().removeClass("fix")
 			})
 		</script>
 	</body>
