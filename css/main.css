@@ -114,9 +114,9 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .form-login .item a{display: block;}
 .form-login .item a:before{content: '';position: absolute;right: 8%;width: 9px;height: 9px;top: 20px;border-top: 1px solid #ababab;    border-right: 1px solid #ababab;transform: rotate(45deg);}
 .form-login .item label{width: 34%;padding: 0 15px;font-size: 14px;color: #555;}
-.form-login .item input{width: 65%;color: #c1c1c1;font-size: 14px;}
-.buy-form.form-login .item label{padding: 0 0 0 15px;float: left;box-sizing: border-box;}
-.buy-form.form-login .item input{float: right;height: 24px;margin-top: 14px;}
+.form-login .item input{color: #c1c1c1;font-size: 14px;}
+.buy-form.form-login .item label{padding: 0 0 0 15px;float: left;box-sizing: border-box;    display: block;}
+.buy-form.form-login .item input{float: left;height: 24px;margin-top: 14px;}
 .buy-form.form-login .item .bank{}
 .buy-form.form-login .item .bank img{width: 21px;height: 21px;float: left;margin-top: 15px;}
 .buy-form.form-login .item .bank p {line-height: 18px;margin-left: 10px;}
