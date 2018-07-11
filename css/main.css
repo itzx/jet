@@ -107,7 +107,8 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .popup .cont .cont-colse img{position: absolute;top: 50%;width: 30px;height: 30px;margin-top: 110px;left: 50%;margin-left: -15px;}
 .title-logo{text-align: center;    margin: 75px 0 70px;}
 .title-logo img{width: 40px;height: 38px;}
-.form-login{}
+
+.form-login{    margin-top: 45px;}
 .form-login .item{height: 50px;line-height: 50px;position: relative;background: #fff;clear: both;}
 .form-login .item:after{position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;content: '';}
 .form-login .item a{display: block;}
@@ -156,7 +157,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .entrust p{margin-top: 18px;line-height: 18px;color: #555;text-align: justify;}
 .entrust p.entrust-j{margin-top: 35px;}
 /*pay-error*/
-.pay-type{height: 175px;text-align: center;}
+.pay-type{height: 175px;text-align: center;margin-top: 45px;}
 .pay-type img{width: 48px;height: 48px;margin-bottom: 15px;margin-top: 48px;}
 .pay-type p{color: #999;}
 .pay-type p.blue{color: #3977fe;}
