@@ -10,7 +10,7 @@
 
 <body>
     <header class="main_header">
-        <a href="javascript:void(0);" class="l back"></a>
+        <a href="my_index.html" class="l back"></a>
         <h3 class="title">银行卡管理</h3>
     </header>
     <ul class="card_list">
@@ -78,7 +78,7 @@
             </div>
         </li>
     </ul>
-    <div class="card_list_pops">
+    <div class="card_list_pops" style="display: none;">
     	<div class="con">
     		<div class="t">解绑银行卡</div>
     		<div class="c">确定删除绑定的工商银行尾号8012的银行卡吗</div>
@@ -89,8 +89,17 @@
     	</div>
     </div>
     <div class="pro_info_btn">
-        <a href="javascript:void(0);">添加银行卡</a>
+        <a href="my_addcard.html">添加银行卡</a>
     </div>
+    <script src="js/zepto.min.js"></script>
+    <script>
+        $(".del").on("click",function(){
+            $(".card_list_pops").show();
+        });
+        $(".cancel,.ok").on("click",function(){
+            $(".card_list_pops").hide();
+        });
+    </script>
 </body>
 
 </html>
