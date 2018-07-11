@@ -51,7 +51,7 @@ header{position: relative;height: 45px;}
 header .title-icon{width: 15%;display: block;    height: 100%;}
 header .title-icon img{width:15px;height:15px;display: block;margin: 0 auto;padding-top: 15px;}
 header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inline-block;overflow: hidden;width: auto;    margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 14px}
-.title-logo{text-align: center;margin: 30px 0 70px;}
+.title-logo{text-align: center;margin: 75px 0 70px;}
 .title-logo img{width: 40px;height: 38px;}
 .form-login{}
 .form-login .item{height: 50px;line-height: 50px;position: relative;background: #fff;}
@@ -65,7 +65,28 @@ header .title-login{position: absolute;right: 40px;left: 40px;top:0;display: inl
 .form-login .link-area a{color: #555;}
 /*蓝底头*/
 .main_header{ background: #3491f9; position: fixed; left: 0; top:0; height: 45px; width: 100%;}
-.title_index{position: absolute;right: 40px;left: 40px;top:0;display: inline-block;overflow: hidden;width: auto; margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 16px; color: #FFF;}
+.main_header.white{ background: #fff; }
+.main_header .title{position: absolute;right: 45px;left: 45px;top:0;display: inline-block;overflow: hidden;width: auto; margin: 0;text-overflow: ellipsis;height: 45px;line-height: 45px;text-align: center;font-size: 16px; color: #FFF;}
+.main_header.white .title{ color: #3491f9; }
+.main_header a{ display: block; width: 45px; height: 45px; background: url(../img/headericon.png) no-repeat; background-size: 135px 45px; }
+.main_header .l{ float: left; }
+.main_header .r{ float: right; }
+.main_header .close{ background-position: 0 0; }
+.main_header .back{ background-position: -45px 0; }
+.main_header .add{ background-position: -90px 0; }
+/*公共底*/
+.main_footer{ height: 50px; box-sizing: border-box; padding-top:5px; overflow:hidden; position: fixed; left:0; right:0; bottom: 0; background: #fff; box-shadow: 0 0 10px #b8d1ff}
+.main_footer a{ display: block; width: 33.3333%; float: left; color: #b6b6b6; text-align: center;}
+.main_footer span{ display: block; width: 25px; height: 25px; background: url(../img/footericon.png) no-repeat; background-size: 75px 50px; margin: 0 auto; }
+.main_footer b{ display: block; height: 20px; line-height: 20px; font-size: 12px;}
+.main_footer span.home{ background-position: 0 -25px; }
+.main_footer span.customer{ background-position: -25px -25px; }
+.main_footer span.usercenter{ background-position: -50px -25px; }
+.main_footer .active{ color: #37f;}
+.main_footer .active span.home{ background-position: 0 0; }
+.main_footer .active span.customer{ background-position: -25px 0; }
+.main_footer .active span.usercenter{ background-position: -50px 0; }
+
 /*主产品列表样式*/
 .main_pro_list{ padding:60px 20px; }
 .main_pro_list li{ background: #fff; margin-bottom: 20px; padding-bottom: 10px; border-radius: 5px; box-shadow: 0 0 10px #b8d1ff}
