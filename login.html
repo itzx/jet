@@ -36,6 +36,33 @@
 				</div>
 			</div>
 		</section>
+	    <div class="card_list_pops" style="display: none;">
+	    	<div class="con">
+	    		<div class="t">提示</div>
+	    		<div class="c">账号输入错误请重新输入</div>
+	    		<div class="btns">
+	    			<a href="javascript:void(0);" class="only ok">确定</a>
+	    		</div>
+	    	</div>
+	    </div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			let telReg = /^1[3|4|5|7|8]\d{9}$/;
+			let cardReg = /^[0-9Xx]{15}|[0-9Xx]{18}$/;
+			$(".login-page").on("click",function(e){
+				let userName = $("#username").val();
+				if(!telReg.test(userName) && !cardReg.test(userName)){
+					e.stopPropagation();
+					e.preventDefault();
+					$(".card_list_pops").show();
+					return false;
+				}
+			});
+			$(".card_list_pops .ok").on("click",function(){
+				$(".card_list_pops").hide();
+				$("#username").focus();
+			})
+		</script>
 	</body>
 
 </html>

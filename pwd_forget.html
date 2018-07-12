@@ -57,6 +57,26 @@
 			$(".cont-colse").on("click",function(){
 				$(".popup").hide();
 			})
+			let timerMax = 5;
+			let time = timerMax;
+			let timer = null;
+			$(".get-code").on("click",function(){
+				if($(this).hasClass("active")){
+					return false;
+				}
+				$(this).addClass("active").html(time+"秒后重新获取");
+				timer = setInterval(function(){
+					if(time > 1){
+						time--;
+						$(".get-code").addClass("active").html(time+"秒后重新获取");
+					}else{
+						timer && clearInterval(timer);
+						timer = null;
+						time = timerMax;
+						$(".get-code").removeClass("active").html("重新获取");
+					}
+				},1000)
+			})
 		</script>
 	</body>
 
