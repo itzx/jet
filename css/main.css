@@ -142,6 +142,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .card_list_pops .con .btns{ height: 40px; line-height: 40px; text-align: center;}
 .card_list_pops .con .btns a{ display: block; width: 50%; float: left;}
 .card_list_pops .con .btns .ok{ color: #3977fe }
+.card_list_pops .con .btns a.only{ float: none; margin: 0 auto; }
 /*popup*/
 .popup{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.5);display: none;}
 .popup .cont{height: 110px;position: absolute;top: 50%;margin-top: -75px;left: 8%;right: 8%;border-radius: 5px;text-align: center;background: #fff; border-bottom: 42px solid #ef3b41;}
@@ -172,6 +173,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .buy-form.form-login .item .bank .p2{font-size: 10px;color: #999}
 .buy-form.form-login .item .bank .bank-info{float: left;}
 .form-login .item .get-code{position: absolute;right: 15px;height: 26px;width: 90px;line-height: 27px;padding: 0;background: #3977fe;color: #fff;font-size: 12px;margin-top: 12px;border-radius: 5px;border: none;cursor: pointer;}
+.form-login .item .get-code.active{background: #999; color: #fff}
 .form-login .padded{margin-top: 45px;}
 .form-login .padded .agree{margin: -25px 6% 40px;height: 30px;font-size: 12px}
 .form-login .padded .agree label{float: left;display: block;width: 20%;}
