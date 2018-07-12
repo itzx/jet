@@ -26,7 +26,7 @@
 				<input type="text" name="" id="tell" value="" class="tell" placeholder="130129199910215513" readonly="readonly" />
 			</div>
 			<div class="item">
-				<a href="javascript:;">
+				<a href="buy_bank_2.html">
 					<label>银行卡</label>
 					<div class="bank">
 						<img src="img/bank.png"/>
@@ -40,7 +40,7 @@
 			</div>
 			<div class="item">
 				<label>输入金额</label>
-				<input type="text" name="" id="icode" value="" class="icode" placeholder="2000.00元起" />
+				<input type="text" name="" id="" value="" class="is-null" placeholder="2000.00元起" />
 			</div>
 			<div class="padded">
 				<div class="agree">
@@ -48,14 +48,26 @@
 						<input type="checkbox" name="" id="" value="" />同意
 					</label>
 					<div class="xieyi">
-						<a href="javascript:;">《出借咨询与服务协议》 </a>
-						<a href="javascript:;"> 《授权委托书-催收及诉讼》</a>
-						<a href="javascript:;">《授权委托书-出借确认和债权转让》</a>
+						<a href="js/pdf1.pdf" target="_blank">《出借咨询与服务协议》 </a>
+						<a href="buy_book_two.html"> 《授权委托书-催收及诉讼》</a>
+						<a href="buy_book_three.html">《授权委托书-出借确认和债权转让》</a>
 					</div>
 				</div>
-				<a href="buy_pay_success.html" class="login-page">立即支付</a>
+				<a href="javascript:;" class="login-page">立即支付</a>
 			</div>
 		</section>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".login-page").on("click",()=>{
+				if($(".is-null").val()==''){
+					alert('请填写金额')
+				}else if(!$("input[type='checkbox']").is(':checked')){
+					alert('请同意协议')
+				}else{
+					window.location.href="buy_pay_success.html"
+				}
+			})
+		</script>
 	</body>
 
 </html>
