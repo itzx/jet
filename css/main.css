@@ -63,12 +63,12 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .main_footer .active span.usercenter{ background-position: -50px 0; }
 
 /*主产品列表样式*/
-.main_pro_list{ padding:60px 20px; }
+.main_pro_list{ padding:20px 20px 60px; }
 .main_pro_list li{ background: #fff; margin-bottom: 20px; padding-bottom: 10px; border-radius: 5px; box-shadow: 0 0 10px #b8d1ff}
 .main_pro_list a{ display: block; padding:0 20px;}
 .main_pro_list .title{ height: 46px; line-height: 46px; font-size: 14px; color: #333; text-align: left; border-bottom: 1px solid #ebebeb;}
-.main_pro_list .tabs{ font-size: 12px; border: 1px solid #ccc; color: #999; border-radius: 3px; padding: 1px 2px; margin-left: 4px;}
-.main_pro_list .tabs_blue{ border-color: #4585fe; color: #4585fe}
+.main_pro_list .tabs{ font-size: 12px; border: 1px solid #ccc; color: #999; border-radius: 3px; padding: 0 2px; margin-left: 4px;}
+.main_pro_list .tabs_blue{ border-color: #4585fe; color: #4585fe; margin-left: 10px;}
 .main_pro_list .tabs_orange{ border-color: #f76a3e; color: #f76a3e}
 .main_pro_list .bottom{ overflow-x: hidden; padding-top: 20px;}
 .main_pro_list .percent{ width: 50%; float: left; }
@@ -77,13 +77,13 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .main_pro_list .bottom .percent b{ font-size: 16px; color: #4585fe; }
 .main_pro_list .bottom .repayment b{ font-size: 14px; color: #333; }
 /*主产品详情*/
-.pro_info_title{ background: #fff; margin-bottom: 10px; padding:65px 20px 20px;}
-.pro_info_title .title{ height: 46px; line-height: 46px; font-size: 14px; color: #333; text-align: left;}
-.pro_info_title .tabs{ font-size: 12px; border: 1px solid #ccc; color: #999; border-radius: 3px; padding: 1px 2px; margin-left: 4px;}
-.pro_info_title .tabs_blue{ border-color: #4585fe; color: #4585fe}
+.pro_info_title{ background: #fff; margin-bottom: 10px; padding:10px 20px 20px;}
+.pro_info_title .title{ height: 46px; line-height: 46px; font-size: 18px; color: #333; text-align: left;}
+.pro_info_title .tabs{ font-size: 12px; border: 1px solid #ccc; color: #999; border-radius: 3px; padding: 0 2px; margin-left: 4px;}
+.pro_info_title .tabs_blue{ border-color: #4585fe; color: #4585fe;margin-left: 10px;}
 .pro_info_title .tabs_orange{ border-color: #f76a3e; color: #f76a3e}
 .pro_info_title .percent b,.pro_info_title .percent span{ display: block; color: #999; padding-bottom: 10px; text-align: center;}
-.pro_info_title .percent b{ display: block; text-align: center; font-size: 28px; color: #4585fe; }
+.pro_info_title .percent b{ display: block; text-align: center; font-size: 28px; color: #4585fe;margin-top: 10px; }
 
 .pro_info_tips{ background: #fff; margin-bottom: 10px; padding:20px;}
 .pro_info_tips .tips_t{ font-size: 12px; color: #999; padding-bottom: 6px;}
@@ -91,7 +91,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .pro_info_tips .item_t .icon{ display: block; float: left; width: 15px; height: 15px; background: url(../img/proinfoicon.png) no-repeat; background-size: 30px 15px; position: relative; top: 12px; margin-right: 6px;}
 .pro_info_tips .item_t .icon_timer{ background-position: 0 0; }
 .pro_info_tips .item_t .icon_pay{ background-position: -15px 0; }
-.pro_info_tips .item_c{ font-size: 14px; color: #999; }
+.pro_info_tips .item_c{ font-size: 14px; color: #999; line-height: 1.5;}
 
 .pro_info_con{ background: #fff; margin-bottom: 10px; padding:20px 20px 65px;}
 .pro_info_con .tit{ font-size: 16px; color: #333; padding-left: 10px; border-left: 2px solid #4585fe; line-height: 1; }
@@ -101,7 +101,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .pro_info_btn{ height: 50px; box-sizing: border-box; overflow:hidden; position: fixed; left:0; right:0; bottom: 0; background: #fff; box-shadow: 0 0 10px #b8d1ff}
 .pro_info_btn a{ display: block; text-align: center; height: 50px; line-height: 50px; color: #FFF; background: #4585fe; font-size: 14px; }
 /*我的*/
-.my_num{ background: #3491f9; color: #FFF; padding-top: 110px; padding-bottom: 60px; text-align: center;}
+.my_num{ background: #3491f9; color: #FFF; padding-top: 35px; padding-bottom: 60px; text-align: center;}
 .my_num .num{ font-size: 30px; }
 .my_num .tips{ font-size: 12px; padding: 10px 0 0; }
 .my_index_list{padding-bottom: 60px;}
@@ -117,7 +117,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .my_index_list li .icon_arrow{ background-position: -100px 0; }
 .my_index_list .logout{ margin-top: 80px; height: 50px; line-height: 50px; text-align: center; font-size: 14px; border-top: none;}
 .my_index_list .logout a{ height: 50px; }
-.my_pro_info{ background: #fff; padding: 95px 0 50px; text-align: center; margin-bottom: 10px;}
+.my_pro_info{ background: #fff; padding: 40px 0 50px; text-align: center; margin-bottom: 10px;}
 .my_pro_info .num{ font-size: 30px; color: #3491f9;}
 .my_pro_info .tips{ padding: 10px 0 0; font-size: 13px; color: #555; }
 .my_pro_info_list{ background: #fff; padding-left: 15px; font-size: 14px;}
@@ -158,9 +158,11 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .form-login .item a{display: block;}
 .form-login .item a:before{content: '';position: absolute;right: 8%;width: 9px;height: 9px;top: 20px;border-top: 1px solid #ababab;    border-right: 1px solid #ababab;transform: rotate(45deg);}
 .form-login .item label{width: 34%;padding: 0 15px;font-size: 14px;color: #555;}
+.info-k .form-login .item label{width: 41%;}
 .form-login .item input{color: #c1c1c1;font-size: 14px;}
+.form-login .item input.lbg{width: 75%;}
 .buy-form.form-login .item label{padding: 0 0 0 15px;float: left;box-sizing: border-box;    display: block;}
-.buy-form.form-login .item input{float: left;height: 24px;margin-top: 14px;}
+.buy-form.form-login .item input{float: left;height: 24px;margin-top: 13px;}
 .buy-form.form-login .item .bank{}
 .buy-form.form-login .item .bank img{width: 21px;height: 21px;float: left;margin-top: 15px;}
 .buy-form.form-login .item .bank p {line-height: 18px;margin-left: 10px;}
@@ -200,7 +202,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .client-list.fix{padding-top: 56px;}
 /*entrust*/
 .entrust{margin: 0 6%;}
-.entrust h3{text-align: center;font-size: 14px;margin: 30px 0 20px;}
+.entrust h3{text-align: center;font-size: 14px;margin-bottom: 20px;padding-top: 30px;}
 .entrust p{margin-top: 18px;line-height: 18px;color: #555;text-align: justify;}
 .entrust p.entrust-j{margin-top: 35px;}
 /*pay-error*/

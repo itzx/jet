@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的客户</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<header class="main_header">
+			<a href="javascript:history.back(-1)" class="l back"></a>
+			<h3 class="title">我的客户</h3>
+		</header>
+
+		<section class="search-user">
+			<input type="text" name="" id="search-u" value="" placeholder="搜索客户" />
+			<a href="javascript:;"><img src="img/search.png" /></a>
+		</section>
+		<section class="client-list">
+			<ul>
+				<li>
+					<a href="order.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="order.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="order.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="order.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="order.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="order.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<div class="fixboc"></div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#search-u").on("focus", function() {
+				$(".client-list").addClass("fix")
+				$(".fixboc").show();
+				$(this).parent().addClass("fix")
+			})
+			$("#search-u").on("blur", function() {
+				$(".client-list").removeClass("fix")
+				$(".fixboc").hide();
+				$(this).parent().removeClass("fix")
+			})
+		</script>
+	</body>
+
+</html>
