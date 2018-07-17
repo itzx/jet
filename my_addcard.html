@@ -15,7 +15,7 @@
     </header>
     <section class="form-login buy-form">
         <div class="item">
-            <label>交易仅支持储蓄卡</label>
+            <label style="width: 60%;">交易仅支持储蓄卡</label>
         </div>
         <div class="item">
             <a href="admin-bank.html">
@@ -42,13 +42,36 @@
                     <input type="checkbox" name="" id="" value="" />同意
                 </label>
                 <div class="xieyi">
-                    <a href="javascript:;">《快捷支付服务协议》 </a>
-                    <a href="javascript:;"> 《委托扣款授权书》</a>
+                    <a href="kuai.html">《快捷支付服务协议》 </a>
+                    <a href="kuai-wt.html"> 《委托扣款授权书》</a>
                 </div>
             </div>
             <a href="my_cardlist.html" class="login-page">确定</a>
         </div>
     </section>
+    <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			let timerMax = 60;
+			let time = timerMax;
+			let timer = null;
+			$(".get-code").on("click",function(){
+				if($(this).hasClass("active")){
+					return false;
+				}
+				$(this).addClass("active").html(time+"秒后重新获取");
+				timer = setInterval(function(){
+					if(time > 1){
+						time--;
+						$(".get-code").addClass("active").html(time+"秒后重新获取");
+					}else{
+						timer && clearInterval(timer);
+						timer = null;
+						time = timerMax;
+						$(".get-code").removeClass("active").html("重新获取");
+					}
+				},1000)
+			})
+		</script>
 </body>
 
 </html>

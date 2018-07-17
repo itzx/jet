@@ -38,6 +38,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 /*清浮动*/
 .clearfix:after { content: " "; display: block; clear: both; height: 0;}
 .clearfix {zoom: 1;}
+.loading{display: none;margin: 15px auto;text-align: center;}
 /*蓝底头*/
 .main_header{ background: #3491f9; position: fixed; left: 0; top:0; height: 45px; width: 100%;z-index: 99;}
 .main_header.white{ background: #fff; }
@@ -63,7 +64,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .main_footer .active span.usercenter{ background-position: -50px 0; }
 
 /*主产品列表样式*/
-.main_pro_list{ padding:20px 20px 60px; }
+.main_pro_list{ padding:20px 20px 0; }
 .main_pro_list li{ background: #fff; margin-bottom: 20px; padding-bottom: 10px; border-radius: 5px; box-shadow: 0 0 10px #b8d1ff}
 .main_pro_list a{ display: block; padding:0 20px;}
 .main_pro_list .title{ height: 46px; line-height: 46px; font-size: 14px; color: #333; text-align: left; border-bottom: 1px solid #ebebeb;}
@@ -138,7 +139,7 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .card_list_pops{ position: fixed; z-index: 99; background: rgba(0,0,0,.3); left:0; top:0; right: 0; bottom: 0;}
 .card_list_pops .con{ display: block; width: 80%; height: 200px; position: absolute; left:10%; right: 10%; top: 50%; margin-top: -100px; background: #fff; border-radius: 10px; padding: 15px 0; box-sizing: border-box;}
 .card_list_pops .con .t{ text-align: center;font-size: 15px; color: #333; line-height: 40px;}
-.card_list_pops .con .c{ height: 90px; line-height: 1.5; overflow-y: scroll; font-size: 14px; color: #555; padding: 15px 25px; box-sizing: border-box;}
+.card_list_pops .con .c{ height: 90px; line-height: 1.5; overflow-y: auto; font-size: 14px; color: #555; padding: 15px 25px; box-sizing: border-box;    text-align: center;}
 .card_list_pops .con .btns{ height: 40px; line-height: 40px; text-align: center;}
 .card_list_pops .con .btns a{ display: block; width: 50%; float: left;}
 .card_list_pops .con .btns .ok{ color: #3977fe }
