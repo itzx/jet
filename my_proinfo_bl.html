@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>投资补录</title>
+    <link rel="stylesheet" type="text/css" href="css/LCalendar.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="main_header">
+        <a href="my_index.html" class="l back"></a>
+        <h3 class="title">产品投资详情</h3>
+    </header>
+    <div class="my_pro_info">
+        <div class="num">8888.88元</div>
+        <div class="tips">出借本金</div>
+    </div>
+    <ul class="my_pro_info_list">
+        <li>
+            <div class="tit">订单编号</div>
+            <div class="con">z12345678910</div>
+        </li>
+        <li>
+            <div class="tit">合同编号</div>
+            <div class="con">W12345678910</div>
+        </li>
+        <li>
+            <div class="tit">支付时间</div>
+            <div class="con">20180403 18：06</div>
+        </li>
+        <li>
+            <div class="tit">交易金额</div>
+            <div class="con">2000.00元</div>
+        </li>
+        <li>
+            <div class="tit">预期年化</div>
+            <div class="con">20.80%</div>
+        </li>
+        <li>
+            <div class="tit">预期收益</div>
+            <div class="con">1000.00元</div>
+        </li>
+        <li>
+            <div class="tit">起息日</div>
+            <div class="con">
+            	<input type="text" name="" readOnly='readOnly' id="start_date" value="" placeholder="请选择起息日" />
+            </div>
+        </li>
+        <li>
+            <div class="tit">终止日</div>
+            <div class="con">20190402</div>
+        </li>
+        <li>
+            <div class="tit">协议签署日期</div>
+            <div class="con">20180403</div>
+        </li>
+    </ul>
+    <a href="order_two.html" class="login-page" >确定</a>
+    <script src="js/LCalendar.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+		var calendar = new LCalendar();
+		calendar.init({
+			'trigger': '#start_date', //标签id
+			'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+			'minDate': (new Date().getFullYear()-3) + '-' + 1 + '-' + 1, //最小日期
+			'maxDate': (new Date().getFullYear()+3) + '-' + 12 + '-' + 31 //最大日期
+		});
+	
+	</script>
+</body>
+
+</html>

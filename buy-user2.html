@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>我的客户</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/mescroll.min.css"/>
 	</head>
 
 	<body>
@@ -18,8 +19,8 @@
 			<input type="text" name="" id="search-u" value="" placeholder="搜索客户" />
 			<a href="javascript:;"><img src="img/search.png" /></a>
 		</section>
-		<section class="client-list">
-			<ul>
+		<section class="client-list mescroll" id="mescrolls">
+			<ul id="newsList">
 				<li>
 					<a href="order.html">
 						<div class="list-l">
@@ -96,7 +97,9 @@
 		</section>
 		<div class="fixboc"></div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function(){
 			$("#search-u").on("focus", function() {
 				$(".client-list").addClass("fix")
 				$(".fixboc").show();
@@ -106,6 +109,42 @@
 				$(".client-list").removeClass("fix")
 				$(".fixboc").hide();
 				$(this).parent().removeClass("fix")
+			})
+			//创建MeScroll对象
+				var mescroll = new MeScroll("mescrolls", {
+					down: {
+						auto: false, //是否在初始化完毕之后自动执行下拉回调callback; 默认true
+						callback: function() {
+							setTimeout(function() {
+								mescroll.endSuccess();
+							}, 1000)
+						} //下拉刷新的回调
+					},
+					up: {
+						auto: false, //是否在初始化时以上拉加载的方式自动加载第一页数据; 默认false
+						isBounce: false, //此处禁止ios回弹,解析(务必认真阅读,特别是最后一点): http://www.mescroll.com/qa.html#q10
+						callback: function() {
+							setTimeout(function() {
+								mescroll.endSuccess(10,true);
+								var str = `<li>
+					<a href="buy_bank.html">
+						<div class="list-l">
+							<img src="img/my-user.png" />
+							<span>高兴</span>
+						</div>
+						<div class="list-r">
+							<h4>15811882930</h4>
+							<p>621780291098789</p>
+						</div>
+					</a>
+				</li>`;
+								$("#newsList").append(str)
+							}, 1000)
+
+						}
+
+					}
+				});
 			})
 		</script>
 	</body>

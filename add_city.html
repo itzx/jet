@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>客户订单查询</title>
+		<title>客户管理</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/mescroll.min.css"/>
 	</head>
@@ -12,80 +12,38 @@
 	<body>
 		<header class="main_header">
 			<a href="javascript:history.back(-1)" class="l back"></a>
-			<h3 class="title">客户订单查询</h3>
+			<h3 class="title">客户管理</h3>
+			<a href="admin-info.html" class="r add"></a>
 		</header>
-		<nav>
-			<ul>
-				<li>
-					<a href="order.html" class="active">交易记录</a>
-				</li>
-				<li class="line">|</li>
-				<li>
-					<a href="order_two.html">投资记录</a>
-				</li>
-				<li class="line">|</li>
-				<li>
-					<a href="order_three.html">投资补录</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="client-list mescroll" id="mescrolls">
+
+		<section class="search-user" style="position: fixed;top: 45px;width: 100%;">
+			<input type="text" name="" id="search-u" value="" placeholder="搜索客户" />
+			<a href="javascript:;"><img src="img/search.png" /></a>
+		</section>
+		<section class="city-list mescroll" id="mescrolls">
 			<ul id="newsList">
 				<li>
-					<a href="buy_pay_success.html">
-						<div class="list-l order-l">
-							<h4>车稳盈体验版</h4>
-							<p>2018-01-16 11:35:29</p>
-						</div>
-						<div class="list-r">
-							<h4>2000.00元</h4>
-							<p class="blue">支付成功</p>
-
-						</div>
-					</a>
+					<a href="admin-info1.html">北京市</a>
 				</li>
 				<li>
-					<a href="buy_pay_success.html">
-						<div class="list-l order-l">
-							<h4>车稳盈体验版</h4>
-							<p>2018-01-16 11:35:29</p>
-						</div>
-						<div class="list-r">
-							<h4>2000.00元</h4>
-							<p class="blue">支付成功</p>
-
-						</div>
-					</a>
+					<a href="admin-info1.html">天津市</a>
 				</li>
 				<li>
-					<a href="buy_pay_success.html">
-						<div class="list-l order-l">
-							<h4>车稳盈体验版</h4>
-							<p>2018-01-16 11:35:29</p>
-						</div>
-						<div class="list-r">
-							<h4>2000.00元</h4>
-							<p class="blue">支付成功</p>
-
-						</div>
-					</a>
+					<a href="admin-info1.html">保定市</a>
 				</li>
 				<li>
-					<a href="buy_pay_error.html">
-						<div class="list-l order-l">
-							<h4>车稳盈体验版</h4>
-							<p>2018-01-16 11:35:29</p>
-						</div>
-						<div class="list-r">
-
-							<h4>2000.00元</h4>
-							<p class="red">支付失败</p>
-
-						</div>
-					</a>
+					<a href="admin-info1.html">沧州市</a>
+				</li>
+				<li>
+					<a href="admin-info1.html">石家庄市</a>
+				</li>
+				<li>
+					<a href="admin-info1.html">郑州市</a>
 				</li>
 			</ul>
 		</section>
+		
+		<div class="fixboc"></div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
@@ -115,18 +73,7 @@
 							setTimeout(function() {
 								mescroll.endSuccess(10,true);
 								var str = `<li>
-					<a href="buy_pay_error.html">
-						<div class="list-l order-l">
-							<h4>车稳盈体验版</h4>
-							<p>2018-01-16 11:35:29</p>
-						</div>
-						<div class="list-r">
-
-							<h4>2000.00元</h4>
-							<p class="red">支付失败</p>
-
-						</div>
-					</a>
+					<a href="javascript:;">郑州市</a>
 				</li>`;
 								$("#newsList").append(str)
 							}, 1000)

@@ -35,6 +35,13 @@ img { width: 100%; vertical-align: middle; outline: none;}
 table { border-collapse: collapse; border-spacing: 0; }
 a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;}
 
+/**/
+.mescroll-upwarp{padding: 30px 0 60px;}
+#mescroll,#mescrolls,#mescrolls_m,#mescrolls_h{ position: fixed;top: 45px;bottom: 45px;height: auto;}
+#mescrolls{top: 100px;bottom: 0;}
+#mescrolls_m{top: 100px;bottom: 45px;}
+#mescrolls_h{top: 125px;bottom: 45px;}
+.mescroll{max-width: 750px !important;}
 /*清浮动*/
 .clearfix:after { content: " "; display: block; clear: both; height: 0;}
 .clearfix {zoom: 1;}
@@ -180,14 +187,16 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .form-login .padded .agree label{float: left;display: block;width: 20%;}
 .form-login .padded .agree .xieyi{float: right;width: 80%;line-height: 19px;}
 .form-login .padded .agree .xieyi a{color: #3977fe;}
-.form-login .padded .login-page{margin: 0 6%;background: #3377ff;border-radius: 5px;color: #fff;text-align: center;height: 50px;display: block;line-height: 50px;font-size: 14px;clear: both;}
+.login-page{margin: 20px 6%;background: #3377ff;border-radius: 5px;color: #fff;text-align: center;height: 50px;display: block;line-height: 50px;font-size: 14px;clear: both;}
 .form-login .link-area{float: right;margin-right: 6%;height: 40px;line-height: 40px;}
 .form-login .link-area a{color: #555;}
 /*search*/
-.search-user{position: relative;}
+.search-user{position: fixed;    width: 100%;
+    max-width: 750px;
+    z-index: 9;}
 .search-user input{margin: 10px 5%;height: 20px;background: #fff;border-radius: 50px;text-align: center;width: 90%;padding: 8px 0;position: relative;}
 .search-user a{position: absolute;right: 10%;top: 19px;width: 18px;height: 19px;}
-.client-list{background: #fff;}
+.client-list,.city-list{background: #fff;}
 .client-list li{clear: both;overflow: hidden;height: 55px;position: relative;}
 .client-list li:after{content: '';position: absolute;left: 15px;right: 0;bottom: 0; border-bottom: 1px solid #e6e6e6;}
 .client-list li a{ display: block;
@@ -198,6 +207,9 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .client-list li .list-r{float: right;text-align: right;line-height: 18px;margin-top: 10px;margin-right: 6%;}
 .client-list li .list-r h4{font-size: 15px}
 .client-list li .list-r p{color: #999;font-size: 12px}
+.city-list{background: #fff;}
+.city-list li{height: 35px;line-height: 35px;border-bottom: 1px solid #ccc;}
+.city-list li a{padding-left: 20px;display: block;}
 .fixboc{position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: rgba(0,0,0,0.5);z-index: 0;display: none;}
 .fix.search-user{position: fixed;top: 45px;z-index: 9;width: 100%;max-width: 750px;}
 /*sselect bank*/
@@ -221,8 +233,10 @@ a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;
 .table thead tr{height: 45px;line-height: 45px;}
 .table tbody tr{height: 40px;border-bottom: 1px solid #e6e6e6;font-size: 13px;line-height: 40px;background: #fff;}
 /*order*/
-nav{border-bottom: 1px solid #f1f2f1;overflow: hidden;background: #fff;}
-nav li{width: 49%;float: left;text-align: center;height: 45px;line-height: 45px; }
+nav{border-bottom: 1px solid #f1f2f1;overflow: hidden;background: #fff;position: fixed;
+    top: 45px;
+    width: 100%;max-width: 750px;}
+nav li{width: 32%;float: left;text-align: center;height: 45px;line-height: 45px; }
 nav li.line{width: 1%;color: #999;}
 nav li a{display: block;}
 nav li a.active{color: #3977fe;}
@@ -232,7 +246,7 @@ nav li a.active{color: #3977fe;}
 .list-l.order-l p{color: #999;}
 .client-list li .list-r p.blue{color: #3977FE;}
 .client-list li .list-r p.red{color: #fd6040;}
-.screen{position: relative;height: 35px;}
+.screen{position: fixed;height: 35px;top: 90px;right: 0;z-index: 9;}
 .screen a{height: 35px;width:50px;text-align:center;display: block;float: right;margin-right: 25px;line-height: 35px;color: #999;}
 .scr-type{width: 120px;border-radius: 5px;background: #fff;position: absolute;right: 25px;z-index: 99;top: 35px;display: none;}
 .scr-type:after{content: '';width:0;

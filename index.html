@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>产品列表</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/mescroll.min.css" />
 	</head>
 
 	<body style=" padding-bottom: 45px;">
@@ -13,72 +14,74 @@
 			<h3 class="title">产品列表</h3>
 		</header>
 		<!-- ul.main_pro_list>li*10>a[href="javascript:void(0)"]>(div.title{产品-3期}>span.tabs.tabs_blue{期限固定}+span.tabs.tabs_orange{收益稳健})+div.bottom>(div.repayment>b{还款方式}+span{按月付息 到期付本})+(div.percent>b{7%}+span{预计年化收益}) -->
-		<ul class="main_pro_list">
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车稳盈体验版<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
-						<div class="percent"><b>10.50%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车稳盈2号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
-						<div class="percent"><b>6.50%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车稳盈3号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
-						<div class="percent"><b>8.50%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车稳盈5号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
-						<div class="percent"><b>10.50%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车稳盈6号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
-						<div class="percent"><b>12.50%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车稳盈7号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
-						<div class="percent"><b>13.00%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<a href="pro_info.html">
-					<div class="title">车年定投1号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
-					<div class="bottom">
-						<div class="repayment"><b>还款方式</b><span>期末一次性归还本息</span></div>
-						<div class="percent"><b>11.00%</b><span>预计年化收益</span></div>
-					</div>
-				</a>
-			</li>
+		<div id="mescroll" class="mescroll">
+			<ul class="main_pro_list" id="newsList">
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车稳盈体验版<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
+							<div class="percent"><b>10.50%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车稳盈2号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
+							<div class="percent"><b>6.50%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车稳盈3号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
+							<div class="percent"><b>8.50%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车稳盈5号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
+							<div class="percent"><b>10.50%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车稳盈6号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
+							<div class="percent"><b>12.50%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车稳盈7号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>按月付息,到期付本</span></div>
+							<div class="percent"><b>13.00%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="pro_info.html">
+						<div class="title">车年定投1号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+						<div class="bottom">
+							<div class="repayment"><b>还款方式</b><span>期末一次性归还本息</span></div>
+							<div class="percent"><b>11.00%</b><span>预计年化收益</span></div>
+						</div>
+					</a>
+				</li>
 
-		</ul>
+			</ul>
+		</div>
 		<p class="loading">加载中...</p>
 		<footer class="main_footer">
 			<a href="index.html" class="active">
@@ -95,16 +98,43 @@
 			</a>
 		</footer>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(window).scroll(function() {
-				//当时滚动条离底部60px时开始加载下一页的内容
-				if(($(window).height() + $(window).scrollTop() + 60) >= $(document).height()) {
-					$(".loading").show();
-					setTimeout(function(){
-						$(".loading").remove();
-					},1500)
-				}
-			});
+		<script src="js/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				//创建MeScroll对象
+				var mescroll = new MeScroll("mescroll", {
+					down: {
+						auto: false, //是否在初始化完毕之后自动执行下拉回调callback; 默认true
+						callback: function() {
+							setTimeout(function(){
+								mescroll.endSuccess();
+							},1000)
+						} //下拉刷新的回调
+					},
+					up: {
+						auto: false, //是否在初始化时以上拉加载的方式自动加载第一页数据; 默认false
+						isBounce: false, //此处禁止ios回弹,解析(务必认真阅读,特别是最后一点): http://www.mescroll.com/qa.html#q10
+						callback: function() {
+							setTimeout(function() {
+								mescroll.endSuccess();
+								var str = `<li>
+				<a href="pro_info.html">
+					<div class="title">车年定投1号<span class="tabs tabs_blue">期限固定</span><span class="tabs tabs_orange">收益稳健</span></div>
+					<div class="bottom">
+						<div class="repayment"><b>还款方式</b><span>期末一次性归还本息</span></div>
+						<div class="percent"><b>11.00%</b><span>预计年化收益</span></div>
+					</div>
+				</a>
+			</li>`;
+								$("#newsList").append(str)
+							}, 1000)
+
+						} 
+						
+
+					}
+				});
+			})
 		</script>
 	</body>
 
