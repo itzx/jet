@@ -34,7 +34,7 @@ button:focus { border: none; }
 img { width: 100%; vertical-align: middle; outline: none;}
 table { border-collapse: collapse; border-spacing: 0; }
 a { text-decoration: none; color: #333;-webkit-tap-highlight-color: transparent;}
-
+.mt10{margin-top: 10px;}
 /**/
 .mescroll-upwarp{padding: 30px 0 60px;}
 #mescroll,#mescrolls,#mescrolls_m,#mescrolls_h{ position: fixed;top: 45px;bottom: 45px;height: auto;}
