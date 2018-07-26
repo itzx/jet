@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>客户信息输入</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/loading.css"/>
 	</head>
 
 	<body class="info-k">
@@ -71,9 +72,22 @@
 						<a href="kuai-wt.html"> 《委托扣款授权书》</a>
 					</div>
 				</div>
-				<a href="admin.html" class="login-page" style="margin-bottom: 20px;">确认提交</a>
+				<a href="Javascript:;" class="login-page" style="margin-bottom: 20px;">确认提交</a>
 			</div>
 		</section>
+		<div class="fixboc"></div>
+			<div class="loadings">
+				<div class="loader-inner line-spin-fade-loader">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			let timerMax = 60;
@@ -95,6 +109,16 @@
 						$(".get-code").removeClass("active").html("重新获取");
 					}
 				},1000)
+			})
+			$(".login-page").click(function(){
+				$(".fixboc").show();
+				$(".loadings").show();
+				setTimeout(function(){
+					$(".fixboc").hide();
+					$(".loadings").hide();
+					window.location.href ="admin.html"
+				},3000)
+				
 			})
 		</script>
 		
